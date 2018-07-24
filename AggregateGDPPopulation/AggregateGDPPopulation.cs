@@ -24,7 +24,7 @@ namespace AggregateGDPPopulation
 
         public static async Task MethodAsync()
         {
-            StreamReader filePathCSV = new StreamReader(@@"../../../../AggregateGDPPopulation/data/datafile.csv");
+            StreamReader filePathCSV = new StreamReader(@"../../../../AggregateGDPPopulation/data/datafile.csv");
             List<string> contents = new List<string>();
             Task<string> dataFileAsString = filePathCSV.ReadToEndAsync();
             StreamReader readJSON = new StreamReader(@"../../../../AggregateGDPPopulation/data/country-continent-map.json");
